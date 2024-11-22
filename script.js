@@ -48,21 +48,16 @@ document.addEventListener('DOMContentLoaded', function() {
         updateStatus(currentCommand.status || '', currentCommand.statusPulse);
 
         typed = new Typed('#typed-text', {
-            strings: [currentCommand.command],
+            strings: [currentCommand.command, ''],
             typeSpeed: 50,
-            backSpeed: 30,
+            backSpeed: 15,
             showCursor: true,
             cursorChar: '█',
+            backDelay: currentCommand.delay,
+            loop: false,
             onComplete: function() {
-                setTimeout(() => {
-                    currentCommandIndex = (currentCommandIndex + 1) % commands.length;
-                    const nextCommand = commands[currentCommandIndex];
-                    updateBlackbox(nextCommand.blackbox);
-                    updateStatus(nextCommand.status || '', nextCommand.statusPulse);
-                    typed.strings = [nextCommand.command];
-                    typed.reset();
-                    typed.start();
-                }, currentCommand.delay);
+                currentCommandIndex = (currentCommandIndex + 1) % commands.length;
+                setTimeout(initTyped, 100); // Small delay before starting next command
             }
         });
     }
