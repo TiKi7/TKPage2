@@ -1,3 +1,5 @@
+// typer script
+
 document.addEventListener('DOMContentLoaded', function() {
     let currentCommandIndex = 0;
     let commands = [];
