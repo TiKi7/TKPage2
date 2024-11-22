@@ -6,7 +6,6 @@
             "blackbox": [
                 "Command Options:",
                 "-loop: Enable loop mode",
-                "-v: Volume control",
                 "Current Channel: Main"
             ],
             "status": "Playing: (loop) Never Gonna Give You Up",
