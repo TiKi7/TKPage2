@@ -1,0 +1,76 @@
+{
+    "commands": [
+        {
+            "command": "/tk https://youtube.com/watch?v=... -loop",
+            "delay": 4000,
+            "blackbox": [
+                "Command Options:",
+                "-loop: Enable loop mode",
+                "Current Channel: Main"
+            ],
+            "status": "Playing: (loop) Never Gonna Give You Up",
+            "statusPulse": true
+        },
+        {
+            "command": "/tch 2",
+            "delay": 3000,
+            "blackbox": [
+                "Channel System:",
+                "Switch between channels",
+                "Available: 1-...",
+                "Current: Channel 2"
+            ],
+            "status": "Channel: Main -> 2",
+            "statusPulse": false
+        },
+        {
+            "command": "/tk https://youtube.com/playlist?list=... -list",
+            "delay": 5000,
+            "blackbox": [
+                "Playlist Mode:",
+                "Auto-play enabled",
+                "Multiple videos",
+                "Current Channel: 2"
+            ],
+            "status": "Playing: (playlist) K-pop Hits 2024",
+            "statusPulse": true
+        },
+        {
+            "command": "/tk https://youtube.com/watch?v=... -50v -2x",
+            "delay": 4500,
+            "blackbox": [
+                "Playback Controls:",
+                "-50v: 50% volume",
+                "-2x: Double speed playback",
+                "Current Channel: 2"
+            ],
+            "status": "Playing: (2x Speed,50% Volume) TWICE - The Feels ",
+            "statusPulse": true
+        },
+        {
+            "command": "/tk find random dance kpop",
+            "delay": 6000,
+            "blackbox": [
+                "[0]: KPOP RANDOM DANCE CHALLENGE (VIRAL HITS)",
+                "[1]: KPOP RANDOM DANCE CHALLENGE 2024",
+                "[2]: Random Dance Play - Girl Groups",
+                "[3]: K-POP RANDOM DANCE GAME | POPULAR SONGS",
+                "Type /tk <number> to play"
+            ],
+            "status": "Searching: random dance kpop...",
+            "statusPulse": false
+        },
+        {
+            "command": "/tk 3",
+            "delay": 4000,
+            "blackbox": [
+                "Selected Video:",
+                "K-POP RANDOM DANCE GAME",
+                "Loading media...",
+                "Current Channel: 2"
+            ],
+            "status": "Playing: INDEX [3]",
+            "statusPulse": true
+        }
+    ]
+}
