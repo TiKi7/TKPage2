@@ -1,4 +1,4 @@
 # TKMedia Documentation Terminal
 
 Interactive terminal-style documentation for TKMedia commands.
-Visit [https://yourusername.github.io/repo-name](https://yourusername.github.io/repo-name) to see it in action.
+Visit [TKPage2](https://tiki7.github.io/TKPage2/) to see it in action.
